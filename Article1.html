@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures and Algorithms</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 3px solid #333;
+    overflow-x: auto;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+     </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <article>
+            <section id="introduction">
+                <h1 style="font-size: 50px;color:cadetblue;">Introduction to Data Structures and Algorithms</h1>
+                <p style="font-size: 20px;"> * Data structures and algorithms are fundamental concepts in computer science that help in solving computational problems efficiently.</p>
+            </section>
+            <section id="algorithm">
+                <h2 style="font-size: 40px;color: darkgrey;">Algorithm</h2>
+                <p>   An algorithm is a step-by-step procedure to solve a problem. Here is an example of a simple algorithm:</p>
+                <ol style="font-size: 25px;color: black;">
+                    <li>Start</li>
+                    <li>Initialize variables</li>
+                    <li>Perform calculations</li>
+                    <li>Return result</li>
+                    <li>End</li>
+                </ol>
+                <h3 style="font-size: 40px;color: darkgrey;" >Types of Algorithms</h3>
+                <ul style="font-size: 25px;">
+                    <li>Sorting Algorithms: Bubble Sort, Quick Sort, Merge Sort</li>
+                    <li>Searching Algorithms: Binary Search, Linear Search</li>
+                    <li>Graph Algorithms: Dijkstra's Algorithm, A* Search</li>
+                </ul>
+            </section>
+            <section id="data-structures">
+                <h2 style="font-size: 40px;color: darkgrey;">Data Structures</h2>
+                <p>Data structures are ways of organizing and storing data so that it can be accessed and modified efficiently. Examples include:</p>
+                <ul style="font-size: 25px;">
+                    <li><strong>Arrays:</strong> A collection of elements identified by index.</li>
+                    <li><strong>Linked Lists:</strong> A series of connected nodes where each node contains data and a reference to the next node.</li>
+                    <li><strong>Stacks:</strong> A collection of elements with Last In, First Out (LIFO) access.</li>
+                    <li><strong>Queues:</strong> A collection of elements with First In, First Out (FIFO) access.</li>
+                    <li><strong>Trees:</strong> A hierarchical structure with nodes connected by edges.</li>
+                    <li><strong>Graphs:</strong> A set of nodes connected by edges, used to represent relationships.</li>
+                </ul>
+                <h3 style="font-size: 30px;">Example: Binary Search Tree</h3>
+                <p>A Binary Search Tree (BST) is a tree data structure in which each node has at most two children, referred to as the left child and the right child. For each node, all elements in the left subtree are less than the node, and all elements in the right subtree are greater.</p>
+                <img src="https://tse4.mm.bing.net/th?id=OIP._CgZ8e5s05BUSX2kJgQL2AHaGL&pid=Api&P=0&h=180" alt="Binary Search Tree">
+            </section>
+            <section id="code">
+                <h2 style="font-size: 40px;color: darkgrey;">Code</h2>
+                <h3>Example: Binary Search Algorithm</h3>
+                <pre><code>
+def binary_search(arr, x):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == x:
+            return mid
+        elif arr[mid] < x:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+                </code></pre>
+            </section>
+            <section id="complexity">
+                <h2 style="font-size: 40px;color: darkgrey;">Complexity</h2>
+                <p>Time complexity is a measure of the amount of time an algorithm takes to complete as a function of the size of the input. Space complexity measures the amount of memory an algorithm uses.</p>
+                <h3 style="font-size: 40px;color: darkgrey;">Big O Notation</h3>
+                <p>Big O notation is used to classify algorithms according to how their run time or space requirements grow as the input size grows. Common complexities include:</p>
+                <ul style="font-size: 25px;color: darkcyan;">
+                    <li><strong>O(1):</strong> Constant time</li>
+                    <li><strong>O(log n):</strong> Logarithmic time</li>
+                    <li><strong>O(n):</strong> Linear time</li>
+                    <li><strong>O(n log n):</strong> Linearithmic time</li>
+                    <li><strong>O(n^2):</strong> Quadratic time</li>
+                </ul>
+            </section>
+            <section id="applications">
+                <h2 style="font-size: 40px;color: darkgrey;">Applications</h2>
+                <p>Data structures and algorithms are used in various fields such as:</p>
+                <ul style="font-size: 25px;color:paleturquoise;">
+                    <li>Web development</li>
+                    <li>Data analysis</li>
+                    <li>Artificial intelligence</li>
+                    <li>Database management</li>
+                    <li>Networking</li>
+                </ul>
+                <h3>Example: Graph Algorithms in Networking</h3>
+                <p>Graph algorithms are widely used in networking to find the shortest path, detect cycles, and optimize routes. For instance, Dijkstra's algorithm is used to find the shortest path between nodes in a graph, which is essential for routing protocols in networks.</p>
+            </section>
+        </article>
+    </main>
+    
+</body>
+</html>
